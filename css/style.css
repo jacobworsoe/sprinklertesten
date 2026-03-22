@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    background: url('/img/winther-road-q10.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Open Sans', system-ui, -apple-system, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #222;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem 1.25rem 2rem;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 0.5em 0 0.2em;
+}
+
+h2 {
+    font-size: 1.35rem;
+    font-weight: 400;
+    margin: 1.2em 0 0.6em;
+}
+
+p {
+    margin: 0.8em 0;
+}
+
+a {
+    color: #0157aa;
+}
+
+a:hover {
+    color: #013d75;
+}
+
+ol {
+    padding-left: 2rem;
+    margin: 0.8em 0;
+}
+
+li {
+    margin: 0.25em 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 0;
+}
+
+a > img {
+    max-width: 400px;
+}
+
+/* Responsive video via CSS aspect-ratio (replaces FitVids.js) */
+.video-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 0.5em 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.alternative-video {
+    font-size: 0.75rem;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    font-style: italic;
+    padding: 1em 0 1em 2rem;
+    margin: 1em 0;
+    line-height: 1.5;
+    position: relative;
+    color: #383838;
+}
+
+blockquote::before {
+    content: "\201C";
+    font-size: 5rem;
+    position: absolute;
+    left: -0.5rem;
+    top: -0.75rem;
+    color: #7a7a7a;
+    line-height: 1;
+}
+
+blockquote cite {
+    color: #999;
+    font-size: 0.875rem;
+    display: block;
+    margin-top: 0.5em;
+}
+
+blockquote cite::before {
+    content: "\2014\2009";
+}
+
+.footer {
+    font-size: 0.75rem;
+    padding-top: 1.5rem;
+    font-style: italic;
+    text-align: center;
+}
